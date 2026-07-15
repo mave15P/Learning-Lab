@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ae0990;
+}
+
+/* El contenedor de tu calculadora */
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 columnas iguales */
+    gap: 10px; /* Espacio entre botones */
+    padding: 20px;
+    background-color: #560863;
+    border-radius: 10px;
+}
+
+/* La pantalla */
+#pantalla {
+    grid-column: span 5; /* Que ocupe todo el ancho de las 4 columnas */
+    padding: 15px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.boton-grande {
+    grid-row: span 2; 
+    font-size: 16px;
+
+}
+
